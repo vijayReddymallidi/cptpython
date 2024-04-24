@@ -48,3 +48,16 @@ print(result)
 
 # s=input()
 # print(zoo(s))
+
+
+#hollow pattern
+def pat(n,i,j):
+    if i==0 or j==0 or i==n-1 or j==n-1:
+        return "*"
+    else:
+        return " "
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        print(pat(n,i,j),end="")
+    print()
